@@ -5,11 +5,18 @@ function appendValue(value ){
             return;
         }
     }
-    if(display.value === '0'&&value!== '.'){
+    if(display.value == '0'&&value!== '.'){
         display.value = value;
     }
     else{
 
         display.value += value;
+    }
+}
+function calculate(){
+    try{
+        display.value=eval(display.value);
+    }catch(error){
+        display.value = 'Алдаа';
     }
 }
