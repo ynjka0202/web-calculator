@@ -44,7 +44,10 @@ button{
 }
 .buttonbig{
     grid-column:span 2;
-    border-radius:30px;
+    border-radius: 30px;
+    width: 100%;
+    height: 60px;
+}
 }
 button:hover{
     background-color: #ff8c00;
