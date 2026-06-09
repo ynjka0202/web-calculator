@@ -83,13 +83,14 @@ button.function:hover {
     background-color: #35354d;
 }
 
-.buttonbig {
+.btn-wide {
     grid-column: span 2;
     border-radius: 14px;
 }
 
-.fullwidth {
+.btn-full {
     grid-column: span 4;
+    border-radius: 14px;
     background-color: #b8892a;
     color: #fff8e7;
     border-color: #c9a84c;
@@ -97,6 +98,6 @@ button.function:hover {
     letter-spacing: 2px;
 }
 
-.fullwidth:hover {
+.btn-full:hover {
     background-color: #c9a84c;
 }
