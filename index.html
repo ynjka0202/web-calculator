@@ -11,33 +11,40 @@
         <input type="text" class="display" id="display" value="0" readonly>
 
         <div class="buttons">
-            <button class="function buttonbig" onclick="clearDisplay()">C</button>
+            <!-- мөр 1: C том, X жижиг -->
+            <button class="function btn-wide" onclick="clearDisplay()">C</button>
             <button class="function" onclick="cancelLast()">X</button>
 
+            <!-- мөр 2: 7 8 9 / -->
             <button class="number" onclick="appendValue('7')">7</button>
             <button class="number" onclick="appendValue('8')">8</button>
             <button class="number" onclick="appendValue('9')">9</button>
             <button class="operator" onclick="appendValue('/')">/</button>
 
+            <!-- мөр 3: 4 5 6 * -->
             <button class="number" onclick="appendValue('4')">4</button>
             <button class="number" onclick="appendValue('5')">5</button>
             <button class="number" onclick="appendValue('6')">6</button>
             <button class="operator" onclick="appendValue('*')">*</button>
 
+            <!-- мөр 4: 1 2 3 - -->
             <button class="number" onclick="appendValue('1')">1</button>
             <button class="number" onclick="appendValue('2')">2</button>
             <button class="number" onclick="appendValue('3')">3</button>
             <button class="operator" onclick="appendValue('-')">-</button>
 
+            <!-- мөр 5: +/- 0 . + -->
             <button class="function" onclick="toggleSign()">+/-</button>
             <button class="number" onclick="appendValue('0')">0</button>
             <button class="number" onclick="appendValue('.')">.</button>
             <button class="operator" onclick="appendValue('+')">+</button>
 
-            <button class="function buttonbig" onclick="calcSquare()">X^2</button>
-            <button class="function buttonbig" onclick="calcSqrt()">sqr( x )</button>
+            <!-- мөр 6: X^2 том, sqr(x) том -->
+            <button class="function btn-wide" onclick="calcSquare()">X^2</button>
+            <button class="function btn-wide" onclick="calcSqrt()">sqr( x )</button>
 
-            <button class="operator buttonbig fullwidth" onclick="calculate()">=</button>
+            <!-- мөр 7: = бүтэн өргөн -->
+            <button class="operator btn-full" onclick="calculate()">=</button>
         </div>
     </div>
     <script src="assets/js/main.js"></script>
