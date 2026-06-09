@@ -11,30 +11,40 @@
         <input type="text" class="display" id="display" value="0" readonly>
 
         <div class="buttons">
+            <!-- мөр 1 -->
             <button class="function buttonbig" onclick="clearDisplay()">C</button>
-            <button class="function">+/-</button>
-            <button class="operator" onclick="appendValue('/')">/ </button>
+            <button class="function" onclick="toggleSign()">+/-</button>
+            <button class="operator" onclick="appendValue('/')">÷</button>
 
+            <!-- мөр 2 -->
+            <button class="function" onclick="cancelLast()">⌫</button>
+            <button class="function" onclick="calcPercent()">%</button>
+            <button class="function" onclick="calcSqrt()">√</button>
+            <button class="operator" onclick="appendValue('*')">×</button>
+
+            <!-- мөр 3 -->
             <button class="number" onclick="appendValue('7')">7</button>
             <button class="number" onclick="appendValue('8')">8</button>
             <button class="number" onclick="appendValue('9')">9</button>
-            <button class="operator" onclick="appendValue('*')">*</button>
+            <button class="operator" onclick="appendValue('-')">-</button>
 
+            <!-- мөр 4 -->
             <button class="number" onclick="appendValue('4')">4</button>
             <button class="number" onclick="appendValue('5')">5</button>
             <button class="number" onclick="appendValue('6')">6</button>
-            <button class="operator" onclick="appendValue('-')">-</button>
+            <button class="operator" onclick="appendValue('+')">+</button>
 
+            <!-- мөр 5 -->
             <button class="number" onclick="appendValue('1')">1</button>
             <button class="number" onclick="appendValue('2')">2</button>
             <button class="number" onclick="appendValue('3')">3</button>
-            <button class="operator" onclick="appendValue('+')">+</button>
-
             <button class="number" onclick="appendValue('0')">0</button>
+
+            <!-- мөр 6 -->
             <button class="number" onclick="appendValue('.')">.</button>
-            <button class="operator buttonbig">=</button>
+            <button class="operator buttonbig" onclick="calculate()">=</button>
         </div>
     </div>
     <script src="assets/js/main.js"></script>
 </body>
-</html
+</html>

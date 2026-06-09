@@ -52,3 +52,7 @@ function calcSqrt() {
     display.value = 'Алдаа';
   }
 }
+function toggleSign() {
+    let val = parseFloat(display.value);
+    if (!isNaN(val)) display.value = (val * -1).toString();
+}
