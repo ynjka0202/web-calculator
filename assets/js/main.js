@@ -56,3 +56,7 @@ function toggleSign() {
     let val = parseFloat(display.value);
     if (!isNaN(val)) display.value = (val * -1).toString();
 }
+function calcSquare() {
+    let val = parseFloat(display.value);
+    if (!isNaN(val)) display.value = (val * val).toString();
+}
